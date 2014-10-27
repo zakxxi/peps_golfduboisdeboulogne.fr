@@ -1,6 +1,9 @@
+
+
 /* Fonts
 *********************************/
-@font-face {
+
+@font-face{
   font-family: 'CenturyGothic';
   src: url('fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),  url('fonts/CenturyGothic.woff') format('woff'), url('fonts/CenturyGothic.ttf')  format('truetype'), url('fonts/CenturyGothic.svg#CenturyGothic') format('svg');
   font-weight: normal;
@@ -10,54 +13,68 @@
 /* BOOTSRAP Custom CSS
 *********************************/
 
-body {
-font-family: 'CenturyGothic', sans-serif;
-font-size: 12px;
-background-color: #404040;
-color: #b4b4b4;
+body
+{
+    font-family: 'CenturyGothic', sans-serif;
+    font-size: 12px;
+    background-color: #404040;
+    color: #b4b4b4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-color: #e4b423;
+h1, h2, h3, h4, h5, h6
+{
+    color: #e4b423;
 }
 
-.navbar {
-margin-bottom:0;
+.navbar
+{
+    margin-bottom: 0;
 }
 
-.jumbotron p {
-margin-bottom: 0;
-font-size: 12px;
-font-weight: normal;
+.jumbotron p
+{
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: normal;
 }
 
-.jumbotron p b{
-font-weight: bold;
+.jumbotron p b
+{
+    font-weight: bold;
 }
 
-.jumbotron {
-margin:0;
+.jumbotron
+{
+    margin: 0;
 }
 
 /* Custom CSS
 *********************************/
-.darkBG{
-	background-image: url("images/darkBGstripes.png");
-	background-repeat: repeat-x;
+
+.darkBG
+{
+    background: #404040;
+    background-image: url('images/darkBGstripes.png');
+    background-repeat: repeat;
 }
 
-.darkerBG{
-background-color: #353535;
+.darkerBG
+{
+    background-color: #353535;
+    background-image: url('images/darkerBGstripes.png');
+    background-repeat: repeat;
 }
 
-.blackBG {
-background-color: #1a1a1a;
+.blackBG
+{
+    background-color: #1a1a1a;
 }
 
-footer > .container-fluid {
-min-height: 100px;
+footer > .container-fluid
+{
+    min-height: 100px;
 }
-
 
 /* MediaQueries
 *********************************/
+
