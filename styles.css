@@ -73,6 +73,19 @@ a ,a:hover, a:active {
     background-repeat: repeat;
 }
 
+.btn-default {
+color: #e4b423;
+background-color: #464646 ;
+border-color: #3c3c3c ;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+color: #e4b423;
+background-color: #464646;
+border-color: #e4b423 ;
+
+}
+
 .jumbotron p
 {
     margin-bottom: 0;
@@ -133,6 +146,7 @@ legend
     background-color: #3c3c3c;
     border: 1px solid #4e4e4e;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .form-control {
@@ -153,6 +167,12 @@ border-color: #e4b423;
     background-image: url('images/logo.png');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+.resetPM {
+	padding: 0!important ;
+    margin: 0!important;
 }
 
 .navbar-inverse .navbar-nav > li > a::first-letter
@@ -211,6 +231,21 @@ a:hover .label-primary
 {
     background-color: #404040;
 }
+
+.well p {
+	color: #c4c4c4;
+    text-align: left;
+}
+
+.well h5, h4, h3 {
+	color: #fff;
+    margin-top: 10px;
+}
+
+.well .btn-group {
+	margin-top:20px;
+}
+
 
 footer > .container-fluid
 {
