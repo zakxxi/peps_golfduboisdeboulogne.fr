@@ -1,8 +1,5 @@
-
-
 /* Fonts
 *********************************/
-
 @font-face{
   font-family: 'CenturyGothic';
   src: url('fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),  url('fonts/CenturyGothic.woff') format('woff'), url('fonts/CenturyGothic.ttf')  format('truetype'), url('fonts/CenturyGothic.svg#CenturyGothic') format('svg');
@@ -12,7 +9,6 @@
 
 /* BOOTSRAP Custom CSS
 *********************************/
-
 body
 {
     font-family: 'CenturyGothic', sans-serif;
@@ -41,6 +37,10 @@ p
 hr
 {
     border: 1px solid #4c4c4c;
+}
+
+a ,a:hover, a:active {
+    color: #e4b423;
 }
 
 .navbar-header
@@ -102,8 +102,8 @@ hr
 }
 
 .label-primary {
-  background-color: #ffbb3b;
-  background-color: rgba(255,187,59,0.7);
+    background-color: #ffbb3b;
+    background-color: rgba(255,187,59,0.7);
 }
 
 .btn-default.disabled
@@ -121,9 +121,31 @@ hr
     color: #595959;
 }
 
+legend
+{
+    color: #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+
+}
+
+.well
+{
+    background-color: #3c3c3c;
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
+}
+
+.form-control {
+    color: #000;
+    border-color: #4e4e4e;
+}
+
+.form-control:focus {
+border-color: #e4b423;
+}
+
 /* Custom CSS
 *********************************/
-
 #logo
 {
     width: 250px;
@@ -201,9 +223,14 @@ footer img
     margin-bottom: 20px;
 }
 
+footer a, footer a:hover, footer a:focus
+{
+    color: #595959;
+}
+
+
 /* MediaQueries
 *********************************/
-
 @media (max-width:480px)
 {
     .navbar-inverse .navbar-nav > li
@@ -229,4 +256,3 @@ footer img
         margin-top: 25px;
     }
 }
-
