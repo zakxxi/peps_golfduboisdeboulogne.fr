@@ -1,11 +1,293 @@
 /* Fonts
 *********************************/
+@font-face{
+  font-family: 'CenturyGothic';
+  src: url('fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),  url('fonts/CenturyGothic.woff') format('woff'), url('fonts/CenturyGothic.ttf')  format('truetype'), url('fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* BOOTSRAP Custom CSS
 *********************************/
+body
+{
+    font-family: 'CenturyGothic', sans-serif;
+    font-size: 12px;
+    background-color: #404040;
+    color: #b4b4b4;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #e4b423;
+    font-weight: normal;
+}
+
+h1, h2
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p
+{
+    text-align: justify;
+}
+
+hr
+{
+    border: 1px solid #4c4c4c;
+}
+
+a ,a:hover, a:active {
+    color: #e4b423;
+}
+
+.navbar-header
+{
+}
+
+.navbar
+{
+    margin-bottom: 0;
+    min-height: 100px;
+}
+
+.navbar-nav > li
+{
+}
+
+.navbar-inverse .navbar-nav > li > a
+{
+    color: #c1c1c1;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav a:hover,
+.navbar-inverse .navbar-nav a:focus
+{
+    background: #404040;
+    background-image: url('images/darkBGstripes.png');
+    background-repeat: repeat;
+}
+
+.btn-default {
+color: #e4b423;
+background-color: #464646 ;
+border-color: #3c3c3c ;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+color: #e4b423;
+background-color: #464646;
+border-color: #e4b423 ;
+
+}
+
+.jumbotron p
+{
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.jumbotron p b
+{
+    font-weight: bold;
+}
+
+.jumbotron
+{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.label
+{
+    border-radius: 0;
+    text-align: left;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.label-primary {
+    background-color: #ffbb3b;
+    background-color: rgba(255,187,59,0.7);
+}
+
+.btn-default.disabled
+{
+    background-color: #404040;
+    color: #a1a1a1;
+    font-weight: bold;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.text-muted
+{
+    color: #595959;
+}
+
+legend
+{
+    color: #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+
+}
+
+.well
+{
+    background-color: #3c3c3c;
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-control {
+    color: #000;
+    border-color: #4e4e4e;
+}
+
+.form-control:focus {
+border-color: #e4b423;
+}
 
 /* Custom CSS
 *********************************/
+#logo
+{
+    width: 250px;
+    height: 100px;
+    background-image: url('images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.resetPM {
+	padding: 0!important ;
+    margin: 0!important;
+}
+
+.navbar-inverse .navbar-nav > li > a::first-letter
+{
+    color: #e4b423;
+}
+
+.imgHolder
+{
+    position: relative;
+}
+
+.imgHolder .label
+{
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+}
+
+.label-big
+{
+    font-size: 20px;
+}
+
+a:hover .label-primary
+{
+    background-color: rgba(255,187,59,1);
+}
+
+.date-pub
+{
+    font-weight: bold !important;
+    padding-bottom: 10px;
+}
+
+.darkBG
+{
+    background-color: #404040;
+    background-image: url('images/darkBGstripes.png');
+    background-repeat: repeat;
+}
+
+.darkerBG
+{
+    background-color: #353535;
+    background-image: url('images/darkerBGstripes.png');
+    background-repeat: repeat;
+}
+
+.blackBG
+{
+    background-color: #1a1a1a;
+}
+
+.grayBG
+{
+    background-color: #404040;
+}
+
+.well p {
+	color: #c4c4c4;
+    text-align: left;
+}
+
+.well h5, h4, h3 {
+	color: #fff;
+    margin-top: 10px;
+}
+
+.well .btn-group {
+	margin-top:20px;
+}
+
+
+footer > .container-fluid
+{
+    padding-bottom: 20px;
+}
+
+footer img
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer a, footer a:hover, footer a:focus
+{
+    color: #595959;
+}
+
 
 /* MediaQueries
 *********************************/
+@media (max-width:480px)
+{
+    .navbar-inverse .navbar-nav > li
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media (min-width:768px)
+{
+    .vcenter
+    {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width:1200px)
+{
+    .navbar-inverse .navbar-nav > li > a
+    {
+        margin-top: 25px;
+    }
+}
