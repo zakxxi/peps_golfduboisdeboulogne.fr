@@ -344,16 +344,9 @@ footer a, footer a:hover, footer a:focus
         float: left;
         width: 100%;
     }
+
 }
 
-@media (min-width:768px)
-{
-    .vcenter
-    {
-        display: flex;
-        align-items: center;
-    }
-}
 
 @media (max-width: 991px) {
     .navbar-header {
