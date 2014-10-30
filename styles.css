@@ -1,5 +1,8 @@
+
+
 /* Fonts
 *********************************/
+
 @font-face{
   font-family: 'CenturyGothic';
   src: url('fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),  url('fonts/CenturyGothic.woff') format('woff'), url('fonts/CenturyGothic.ttf')  format('truetype'), url('fonts/CenturyGothic.svg#CenturyGothic') format('svg');
@@ -9,6 +12,7 @@
 
 /* BOOTSRAP Custom CSS
 *********************************/
+
 body
 {
     font-family: 'CenturyGothic', sans-serif;
@@ -39,22 +43,22 @@ hr
     border: 1px solid #4c4c4c;
 }
 
-a ,a:hover, a:active {
-    color: #e4b423;
-}
-
-.navbar-header
+a ,a:hover, a:active
 {
+    color: #e4b423;
 }
 
 .navbar
 {
     margin-bottom: 0;
-    min-height: 100px;
+    font-size: 13px;
+    border: none;
+    min-height: 20px;
 }
 
-.navbar-nav > li
+.navbar-inverse
 {
+    min-height: 80px;
 }
 
 .navbar-inverse .navbar-nav > li > a
@@ -73,17 +77,18 @@ a ,a:hover, a:active {
     background-repeat: repeat;
 }
 
-.btn-default {
-color: #e4b423;
-background-color: #464646 ;
-border-color: #3c3c3c ;
+.btn-default
+{
+    color: #e4b423;
+    background-color: #464646;
+    border-color: #3c3c3c;
 }
 
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-color: #e4b423;
-background-color: #464646;
-border-color: #e4b423 ;
-
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default
+{
+    color: #e4b423;
+    background-color: #464646;
+    border-color: #e4b423;
 }
 
 .jumbotron p
@@ -122,11 +127,12 @@ border-color: #e4b423 ;
 .btn-default.disabled
 {
     background-color: #404040;
-    color: #a1a1a1;
+    color: #1a1a1a;
     font-weight: bold;
     border: none;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    opacity: 1;
 }
 
 .text-muted
@@ -138,10 +144,9 @@ legend
 {
     color: #b4b4b4;
     border-bottom: 1px solid #b4b4b4;
-
 }
 
-.well
+.well, .panel
 {
     background-color: #3c3c3c;
     border: 1px solid #4e4e4e;
@@ -149,30 +154,32 @@ legend
     padding: 10px;
 }
 
-.form-control {
+.form-control
+{
     color: #000;
     border-color: #4e4e4e;
 }
 
-.form-control:focus {
-border-color: #e4b423;
+.form-control:focus
+{
+    border-color: #e4b423;
 }
 
 /* Custom CSS
 *********************************/
-#logo
-{
-    width: 250px;
-    height: 100px;
-    background-image: url('images/logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
+.maplink {
+	padding-top:15px;
 }
 
-
-.resetPM {
-	padding: 0!important ;
+.resetPM
+{
+    padding: 0!important;
     margin: 0!important;
+}
+
+.resetP
+{
+    padding: 0!important;
 }
 
 .navbar-inverse .navbar-nav > li > a::first-letter
@@ -208,6 +215,52 @@ a:hover .label-primary
     padding-bottom: 10px;
 }
 
+li.priceList
+{
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #4e4e4e;
+    border-bottom: 1px solid #4e4e4e;
+}
+
+li:last-child.priceList
+{
+    border-bottom: none;
+}
+
+li.priceList label
+{
+    position: relative;
+    font-weight: normal;
+    float: left;
+    padding-right: 5px;
+    background-color: #3c3c3c;
+    z-index: 100;
+}
+
+li.priceList span
+{
+    position: relative;
+    float: right;
+    padding-left: 5px;
+    background-color: #3c3c3c;
+    color: #e4b423;
+    z-index: 100;
+}
+
+.dotted-bg
+{
+    border-top: dotted 1px #b4b4b4;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
 .darkBG
 {
     background-color: #404040;
@@ -232,30 +285,31 @@ a:hover .label-primary
     background-color: #404040;
 }
 
-.well p {
-	color: #c4c4c4;
+.panel p
+{
+    color: #c4c4c4;
     text-align: left;
 }
 
-.well h5, h4, h3 {
-	color: #fff;
+.panel h5,.panel  h4, .panel h3
+{
+    color: #fff;
     margin-top: 10px;
 }
 
-.well .btn-group {
-	margin-top:20px;
+.panel .btn-group
+{
+    margin-top: 20px;
 }
 
-
 footer > .container-fluid
-{
+{   margin-top: 20px;
     padding-bottom: 20px;
 }
 
-footer img
+footer img, footer p
 {
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 footer a, footer a:hover, footer a:focus
@@ -263,31 +317,67 @@ footer a, footer a:hover, footer a:focus
     color: #595959;
 }
 
+/* CAROUSEL 
+-------------------------------------------------- */
+
+.carousel.slide
+{
+    max-width: 2000px;
+    min-width: 510px;
+    overflow: hidden;
+}
+
+.carousel-inner
+{
+    width: 2000px;
+    left: 50%;
+    margin-left: -1000px;
+}
 
 /* MediaQueries
 *********************************/
-@media (max-width:480px)
+
+@media (max-width:767px)
 {
-    .navbar-inverse .navbar-nav > li
+    .navbar-nav > li
     {
         float: left;
         width: 100%;
     }
+
 }
 
-@media (min-width:768px)
-{
-    .vcenter
-    {
-        display: flex;
-        align-items: center;
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
     }
-}
-
-@media (min-width:1200px)
-{
-    .navbar-inverse .navbar-nav > li > a
-    {
-        margin-top: 25px;
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
     }
 }
